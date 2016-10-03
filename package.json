@@ -1,0 +1,15 @@
+{
+  "name": "glsl-convert-color",
+  "version": "1.0.0",
+  "description": "this is the function that convetts RGB to HSV. or is its opposite.",
+  "author": {
+    "name": "yoichi kobayashi",
+    "url": "http://www.tplh.net/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ykob/glsl-convert-color.git"
+  },
+  "private": "true"
+}
