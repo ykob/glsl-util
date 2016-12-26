@@ -16,6 +16,14 @@ http://lolengine.net/blog/2013/07/27/rgb-to-hsv-in-glsl
 ### usage
 
 ```
-#pragma glslify: convertHsvToRgb = require(glsl-convert-color/convertHsvToRgb);
-#pragma glslify: convertRgbToHsv = require(glsl-convert-color/convertRgbToHsv);
+#pragma glslify: convertHsvToRgb = require(glsl-util/convertHsvToRgb);
+#pragma glslify: convertRgbToHsv = require(glsl-util/convertRgbToHsv);
+```
+
+## random
+
+### usage
+
+```
+#pragma glslify: random = require(glsl-util/random);
 ```
