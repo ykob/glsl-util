@@ -1,7 +1,7 @@
 {
-  "name": "glsl-convert-color",
-  "version": "1.0.0",
-  "description": "this is the function that convetts RGB to HSV. or is its opposite.",
+  "name": "glsl-util",
+  "version": "1.0.1",
+  "description": "utility functions for glsl.",
   "author": {
     "name": "yoichi kobayashi",
     "url": "http://www.tplh.net/"

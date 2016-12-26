@@ -1,5 +1,7 @@
 # glsl-util
 
+utility functions for glsl.
+
 ## install
 
 ```
