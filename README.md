@@ -58,7 +58,7 @@ calculate the Gaussian blur.
 rotate a vector in any direction.
 
 ```
-#pragma glslify: lookAt = require(glsl-matrix/lookAt);
+#pragma glslify: lookAt = require(glsl-util/lookAt);
 ```
 
 ### `rotateAxisAngle(vec3 p, vec3 axis, float angle)`
@@ -66,5 +66,5 @@ rotate a vector in any direction.
 rotate a vector by any axis and angle.
 
 ```
-#pragma glslify: rotateAxisAngle = require(glsl-matrix/rotateAxisAngle);
+#pragma glslify: rotateAxisAngle = require(glsl-util/rotateAxisAngle);
 ```
