@@ -1,6 +1,7 @@
 # glsl-util
 
-utility functions for glsl.
+utility functions of glsl.  
+these functions are dependent by [glslify](https://github.com/glslify/glslify).
 
 ## install
 
@@ -8,38 +9,62 @@ utility functions for glsl.
 npm i git://github.com/ykob/glsl-util.git
 ```
 
-## convertHsvToRgb and convertRgbToHsv
+## usage
 
-this function converts RGB to HSV. or is its opposite.
+### `convertHsvToRgb(vec3 hsv)`
 
+convert HSV to RGB.  
 http://lolengine.net/blog/2013/07/27/rgb-to-hsv-in-glsl
 
 ```
 #pragma glslify: convertHsvToRgb = require(glsl-util/convertHsvToRgb);
-#pragma glslify: convertRgbToHsv = require(glsl-util/convertRgbToHsv);
-vec3 rgb = convertHsvToRgb(vec3 hsv);
-vec3 hsv = convertRgbToHsv(vec3 rgb);
 ```
 
-## random
+### `convertRgbToHsv(vec3 rgb)`
+
+convert RGB to HSV.  
+http://lolengine.net/blog/2013/07/27/rgb-to-hsv-in-glsl
+
+```
+#pragma glslify: convertRgbToHsv = require(glsl-util/convertRgbToHsv);
+```
+
+### `random(vec2 p)`
+
+calculate white noise.
 
 ```
 #pragma glslify: random = require(glsl-util/random);
-float p = random(vec2 c);
 ```
 
-## polar
+### `spherical(float radian1, float radian2, float radius)`
 
-this function calculates polar coordinates.
+calculate Spherical coordinate.
 
 ```
 #pragma glslify: polar = require(glsl-util/polar);
-vec3 p = polar(float radian1, float radian2, float radius);
 ```
 
-## gaussianBlur
+### `gaussianBlur(sampler2D texture, vec2 uv, float radius, vec2 resolution, vec2 direction)`
+
+calculate the Gaussian blur.
 
 ```
 #pragma glslify: gaussianBlur = require(glsl-util/gaussianBlur);
-vec4 color = gaussianBlur(sampler2D texture, vec2 uv, float radius, vec2 resolution, vec2 direction);
+```
+
+### `lookAt(vec3 base, vec3 p1, vec3 p2, vec3 up)`
+
+rotate a vector in any direction.
+
+```
+#pragma glslify: lookAt = require(glsl-matrix/lookAt);
+```
+
+### `rotateAxisAngle(vec3 p, vec3 axis, float angle)`
+
+rotate a vector by any axis and angle.
+
+```
+#pragma glslify: rotateAxisAngle = require(glsl-matrix/rotateAxisAngle);
 ```
