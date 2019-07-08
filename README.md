@@ -37,9 +37,9 @@ calculate white noise.
 #pragma glslify: random = require(glsl-util/random);
 ```
 
-### `spherical(float radian1, float radian2, float radius)`
+### `polar(float radian1, float radian2, float radius)`
 
-calculate Spherical coordinate.
+calculate polar coordinates.
 
 ```
 #pragma glslify: polar = require(glsl-util/polar);
