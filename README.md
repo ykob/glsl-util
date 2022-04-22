@@ -11,6 +11,62 @@ yarn add @ykob/glsl-util
 
 ## Usage
 
+### `calcRotateMat3(float radian)`
+
+Calculate a 3D Rotation Matrix.
+
+```
+#pragma glslify: calcRotateMat3 = require(@ykob/glsl-util/src/calcRotateMat3);
+```
+
+### `calcRotateMat4(vec3 radian)`
+
+Calculate a 4D Rotation Matrix.
+
+```
+#pragma glslify: calcRotateMat4 = require(@ykob/glsl-util/src/calcRotateMat4);
+```
+
+### `calcRotateMat4X(float radian)`
+
+Calculate a 4D Rotation Matrix with axis X.
+
+```
+#pragma glslify: calcRotateMat4X = require(@ykob/glsl-util/src/calcRotateMat4X);
+```
+
+### `calcRotateMat4Y(float radian)`
+
+Calculate a 4D Rotation Matrix with axis Y.
+
+```
+#pragma glslify: calcRotateMat4Y = require(@ykob/glsl-util/src/calcRotateMat4Y);
+```
+
+### `calcRotateMat4Z(float radian)`
+
+Calculate a 4D Rotation Matrix with axis Z.
+
+```
+#pragma glslify: calcRotateMat4Z = require(@ykob/glsl-util/src/calcRotateMat4Z);
+```
+
+### `calcScaleMat4(vec3 scale)`
+
+Calculate a 4D Scaling Matrix.
+
+```
+#pragma glslify: calcScaleMat4 = require(@ykob/glsl-util/src/calcScaleMat4);
+```
+
+### `calcTranslateMat4(vec3 v)`
+
+Calculate a 4D Translation Matrix.
+
+```
+#pragma glslify: calcTranslateMat4 = require(@ykob/glsl-util/src/calcTranslateMat4);
+```
+
 ### `convertHsvToRgb(vec3 hsv)`
 
 Convert HSV to RGB.  
