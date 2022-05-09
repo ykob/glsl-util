@@ -5,6 +5,14 @@ These functions are dependent on [glslify](https://github.com/glslify/glslify).
 
 ## Install
 
+### npm
+
+```
+npm i @ykob/glsl-util
+```
+
+### yarn
+
 ```
 yarn add @ykob/glsl-util
 ```
