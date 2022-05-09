@@ -19,5 +19,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ykob/glsl-util.git"
-  }
+  },
+  "keywords": [
+    "glsl",
+    "glslify"
+  ]
 }
